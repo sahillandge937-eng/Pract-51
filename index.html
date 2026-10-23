@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE - AI Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PULSE</h1>
+    <p>AI Fitness Tracker</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Daily Summary</h2>
+      <p>Calories Consumed: <strong id="calories">0</strong> kcal</p>
+      <p>Workout Minutes: <strong id="minutes">0</strong> min</p>
+    </section>
+
+    <section class="card">
+      <h2>Log Workout</h2>
+      <label for="workout">Workout name</label>
+      <input id="workout" type="text" placeholder="e.g. Walking">
+      <label for="duration">Duration (minutes)</label>
+      <input id="duration" type="number" min="1" placeholder="e.g. 30">
+      <button id="addWorkout">Add Workout</button>
+      <p id="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>Workout History</h2>
+      <ul id="history"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Stay active. Stay healthy. <strong>PULSE</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
